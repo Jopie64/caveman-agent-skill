@@ -1,4 +1,4 @@
-﻿> **Context note:** Scripts are in the `scripts/` directory at the skill root (adjacent to SKILL.md, not this reference file). Run: `python3 -m scripts <filepath>` from the skill root directory.
+> **Context note:** Scripts are in the `scripts/` directory at the skill root (adjacent to SKILL.md, not this reference file). Run: `python3 -m scripts <filepath>` from the skill root directory.
 
 # Caveman Compress
 

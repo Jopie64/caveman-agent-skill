@@ -1,4 +1,4 @@
-﻿---
+---
 name: caveman
 description: >
   Ultra-compressed communication mode. Cuts token usage ~75% by speaking like caveman
@@ -76,6 +76,7 @@ Example — destructive op:
 ## Boundaries
 
 Code/commits/PRs: write normal. "stop caveman" or "normal mode": revert. Level persist until changed or session end.
+
 ## Sub-Skill Routing
 
 When user invokes a sub-skill command or trigger, load the corresponding reference file.

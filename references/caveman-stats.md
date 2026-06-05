@@ -1,4 +1,4 @@
-﻿> **Context note:** NOTE: This sub-skill is delivered by a Claude Code session hook. It is non-functional in other environments (Copilot CLI, Cursor, etc.). In those contexts, do not attempt to compute stats — explain the limitation to the user.
+> **Context note:** NOTE: This sub-skill is delivered by a Claude Code session hook. It is non-functional in other environments (Copilot CLI, Cursor, etc.). In those contexts, do not attempt to compute stats — explain the limitation to the user.
 
 # Caveman Stats
 
