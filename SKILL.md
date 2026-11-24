@@ -1,16 +1,18 @@
 ---
 name: caveman
 description: >
-  Ultra-compressed communication mode. Cuts token usage ~75% by speaking like caveman
-  while keeping full technical accuracy. Supports intensity levels: lite, full (default),
-  ultra, wenyan-lite, wenyan-full, wenyan-ultra.
+  Ultra-compressed communication mode. Cuts token usage by speaking like caveman
+  while keeping full technical accuracy. Supports modes: caveman (default), ultracave
+  (/ultracave, /caveman ultra), and megacave (/megacave, /caveman wenyan).
   Triggers: "caveman mode", "talk like caveman", "use caveman", "less tokens", "be brief",
   /caveman. Also auto-triggers when token efficiency is requested.
-  Sub-skills (load from references/ when triggered): caveman-commit ("write a commit",
-  "commit message", /caveman-commit), caveman-review ("code review", "review PR",
-  /caveman-review), caveman-compress (/caveman-compress <file>), caveman-help
-  (/caveman-help), caveman-stats (/caveman-stats, Claude Code only),
-  cavecrew ("use cavecrew", "delegate to subagent").
+  Sub-skills (load from references/ when triggered): ultracave (/ultracave, /caveman ultra),
+  megacave (/megacave, /caveman wenyan), caveman-commit ("write a commit", "commit message",
+  /caveman-commit), caveman-review ("code review", "review PR", /caveman-review),
+  caveman-compress (/caveman-compress <file>), caveman-help (/caveman-help),
+  caveman-stats (/caveman-stats, Claude Code only), cavecrew ("use cavecrew",
+  "delegate to subagent"), caveman-explore (read-only repo localization),
+  caveman-learn (act on caveman learn report / trim CLAUDE.md).
 ---
 # caveman
 
@@ -104,9 +106,13 @@ Resume general caveman mode after the sub-skill task is complete.
 
 | Reference | Load when |
 |-----------|-----------|
+| `references/ultracave.md` | /ultracave, /caveman ultra — maximum compression (fragments, payload only) |
+| `references/megacave.md` | /megacave, /caveman wenyan — Classical Chinese (文言文) register |
 | `references/caveman-commit.md` | /caveman-commit, "write a commit", "commit message", "generate commit", staging changes |
 | `references/caveman-review.md` | /caveman-review, "review this PR", "code review", "review the diff" |
 | `references/caveman-compress.md` | /caveman-compress <file>, "compress memory file", "compress this file" |
 | `references/caveman-help.md` | /caveman-help, "what caveman commands", "how do I use caveman", "caveman help" |
 | `references/caveman-stats.md` | /caveman-stats |
 | `references/cavecrew.md` | "use cavecrew", "delegate to subagent", "spawn investigator/builder/reviewer", "save context", "compressed agent output" |
+| `references/caveman-explore.md` | cold-start repo orientation, broad cross-file localization (path:line citations only) |
+| `references/caveman-learn.md` | "lower token cost", "what caveman has saved", "trim CLAUDE.md", acting on a caveman learn report |
